@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エア・ウォーター防災 360写真集</title>
+    <style>
+        body {
+            font-family: "MS UI Gothic", "Meiryo", sans-serif;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+        /* タイトルの文字装飾（青色・太字） */
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000099;
+            margin-bottom: 25px;
+        }
+        /* 2列に並べるための外枠 */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+        }
+        /* 各写真ブロックの幅と余白設定 */
+        .gallery-item {
+            width: 48%; /* 横に2枚きれいに並ぶサイズ */
+            margin-right: 4%;
+            margin-bottom: 40px;
+            box-sizing: border-box;
+        }
+        /* 右側のブロックは右余白を無しにする */
+        .gallery-item:nth-child(even) {
+            margin-right: 0;
+        }
+        /* リンクの装飾を消す */
+        .gallery-item a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+        }
+        /* 画像を横幅いっぱいに綺麗に表示 */
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 0;
+        }
+        /* 写真の下のテキスト（左寄せ・太字） */
+        .text-caption {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">エア・ウォーター防災 360 写真集</div>
+
+    <div class="gallery-container">
+        <!-- 1枚目：国際くらしの医療館 -->
+        <div class="gallery-item">
+            <a href="https://whereness.io/here/8a45490c-2e43-4e1c-ab3b-3ccd7d91690e" target="_blank" rel="noopener noreferrer">
+                <img src="AWB360写真集.files/image002.jpg" alt="国際くらしの医療館・神戸 5階 MIRAI＊PARK">
+                <div class="text-caption">国際くらしの医療館・神戸 5階 MIRAI＊PARK</div>
+            </a>
+        </div>
+
+        <!-- 2枚目：東京都 手術室内装工事 -->
+        <div class="gallery-item">
+            <a href="https://whereness.io/here/5c59e910-1807-44e2-8091-540de3e832d3" target="_blank" rel="noopener noreferrer">
+                <img src="AWB360写真集.files/image016.jpg" alt="東京都 手術室内装工事">
+                <div class="text-caption">東京都 手術室内装工事</div>
+            </a>
+        </div>
+
+        <!-- 3枚目：無影灯 Deneb LED 8000 -->
+        <div class="gallery-item">
+            <a href="https://whereness.io/here/dea20c91-341c-42a7-817f-9d32197ba5a5" target="_blank" rel="noopener noreferrer">
+                <img src="AWB360写真集.files/image019.jpg" alt="無影灯 Deneb LED 8000 納入事例">
+                <div class="text-caption">無影灯 Deneb LED 8000 納入事例</div>
+            </a>
+        </div>
+
+        <!-- 4枚目：神戸市青少年科学館 -->
+        <div class="gallery-item">
+            <a href="https://whereness.io/here/d730e555-1eca-497c-87bb-54558c194f34" target="_blank" rel="noopener noreferrer">
+                <img src="AWB360写真集.files/image020.jpg" alt="神戸市青少年科学館">
+                <div class="text-caption">神戸市青少年科学館</div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
