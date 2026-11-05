@@ -40,8 +40,9 @@
       color: #000000;
       display: block;
     }
-    /* 画像を横幅いっぱいに綺麗に表示 */
-    .gallery-item img {
+    
+    /* 【修正】メイン画像（写真）だけを横幅いっぱいに表示するよう限定 */
+    .gallery-item > a > img {
       width: 100%;
       height: auto;
       display: block;
@@ -63,11 +64,12 @@
       padding-right: 10px; /* QRコードとの間の余白 */
       flex: 1; /* 利用可能な幅いっぱいに広げる */
     }
-    /* QRコードのサイズと余白設定 */
-    .qrcode-img {
-      width: 38px; /* 完成イメージに合わせて小さく調整しました */
-      height: auto;
-      flex-shrink: 0; /* サイズが縮まないように固定 */
+    /* 【修正】最優先でサイズを固定（競合対策） */
+    .gallery-item .qrcode-img {
+      width: 38px !important; /* 完成イメージのサイズに固定 */
+      height: 38px !important;
+      display: block;
+      flex-shrink: 0;
     }
   </style>
 </head>
@@ -79,7 +81,7 @@
     
     <!-- 1枚目：国際くらしの医療館 -->
     <div class="gallery-item">
-      <a href="https://awb.co.jp/kkik2026/" target="_blank" rel="noopener noreferrer">
+      <a href="https://awb.co.jp" target="_blank" rel="noopener noreferrer">
         <img src="AWB360写真集.files/image002.jpg" alt="国際くらしの医療館・神戸 5階 MIRAI＊PARK">
         <div class="caption-container">
           <div class="text-caption">国際くらしの医療館・神戸 5階 MIRAI＊PARK</div>
@@ -90,7 +92,7 @@
 
     <!-- 2枚目：東京都 手術室内装工事 -->
     <div class="gallery-item">
-      <a href="https://awb.co.jp/or_case/" target="_blank" rel="noopener noreferrer">
+      <a href="https://awb.co.jp" target="_blank" rel="noopener noreferrer">
         <img src="AWB360写真集.files/image016.jpg" alt="東京都 手術室内装工事">
         <div class="caption-container">
           <div class="text-caption">東京都 手術室内装工事</div>
@@ -101,7 +103,7 @@
 
     <!-- 3枚目：無影灯 Deneb LED 8000 -->
     <div class="gallery-item">
-      <a href="https://awb.co.jp/led8000/" target="_blank" rel="noopener noreferrer">
+      <a href="https://awb.co.jp" target="_blank" rel="noopener noreferrer">
         <img src="AWB360写真集.files/image019.jpg" alt="無影灯 Deneb LED 8000 納入事例">
         <div class="caption-container">
           <div class="text-caption">無影灯 Deneb LED 8000 納入事例</div>
@@ -112,7 +114,7 @@
 
     <!-- 4枚目：神戸市青少年科学館 -->
     <div class="gallery-item">
-      <a href="https://awb.co.jp/kobe-kagakukan/" target="_blank" rel="noopener noreferrer">
+      <a href="https://awb.co.jp" target="_blank" rel="noopener noreferrer">
         <img src="AWB360写真集.files/image020.jpg" alt="神戸市青少年科学館">
         <div class="caption-container">
           <div class="text-caption">神戸市青少年科学館</div>
