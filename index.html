@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エア・ウォーター防災 360写真集</title>
+  <style>
+    body {
+      font-family: "MS UI Gothic", "Meiryo", sans-serif;
+      margin: 20px;
+      background-color: #ffffff;
+    }
+    /* タイトルの文字装飾（青色・太字） */
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000099;
+      margin-bottom: 25px;
+    }
+    /* 2列に並べるための外枠 */
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+    }
+    /* 各写真ブロックの幅と余白設定 */
+    .gallery-item {
+      width: 48%; /* 横に2枚きれいに並ぶサイズ */
+      margin-right: 4%;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+    }
+    /* 右側のブロックは右余白を無しにする */
+    .gallery-item:nth-child(even) {
+      margin-right: 0;
+    }
+    /* リンクの装飾を消す */
+    .gallery-item a {
+      text-decoration: none;
+      color: #000000;
+      display: block;
+    }
+    
+    /* 【修正】メイン画像（写真）だけを横幅いっぱいに表示するよう限定 */
+    .gallery-item > a > img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 0;
+    }
+    
+    /* テキストとQRコードを横並びにするコンテナ */
+    .caption-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* 縦方向の中央揃え */
+      margin-top: 8px;
+    }
+    /* 写真の下のテキスト（左寄せ・太字） */
+    .text-caption {
+      font-size: 13px;
+      font-weight: bold;
+      text-align: left;
+      padding-right: 10px; /* QRコードとの間の余白 */
+      flex: 1; /* 利用可能な幅いっぱいに広げる */
+    }
+    /* 【修正】最優先でサイズを固定（競合対策） */
+    .gallery-item .qrcode-img {
+      width: 55px !important; /* 完成イメージのサイズに固定 */
+      height: 55px !important;
+      display: block;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title">エア・ウォーター防災 360 写真集</div>
+
+  <div class="gallery-container">
+    
+    <!-- 1枚目：国際くらしの医療館 -->
+    <div class="gallery-item">
+      <a href="https://awb.co.jp/kkik2026/" target="_blank" rel="noopener noreferrer">
+        <img src="awb360pics/kkik2026-pic.jpg" alt="国際くらしの医療館・神戸 5階 MIRAI＊PARK">
+        <div class="caption-container">
+          <div class="text-caption">国際くらしの医療館・神戸 5階 MIRAI＊PARK</div>
+          <img src="awb360pics/kkik2026-qrc.jpg" alt="QRコード" class="qrcode-img">
+        </div>
+      </a>
+    </div>
+
+    <!-- 2枚目：東京都 手術室内装工事 -->
+    <div class="gallery-item">
+      <a href="https://awb.co.jp/or_case/" target="_blank" rel="noopener noreferrer">
+        <img src="awb360pics/or_case-pic.jpg" alt="東京都 手術室内装工事">
+        <div class="caption-container">
+          <div class="text-caption">東京都 手術室内装工事</div>
+          <img src="awb360pics/or_case-qrc.jpg" alt="QRコード" class="qrcode-img">
+        </div>
+      </a>
+    </div>
+
+    <!-- 3枚目：無影灯 Deneb LED 8000 -->
+    <div class="gallery-item">
+      <a href="https://awb.co.jp/led8000/" target="_blank" rel="noopener noreferrer">
+        <img src="awb360pics/led8000-pic.jpg" alt="無影灯 Deneb LED 8000 納入事例">
+        <div class="caption-container">
+          <div class="text-caption">無影灯 Deneb LED 8000 納入事例</div>
+          <img src="awb360pics/led8000-qrc.jpg" alt="QRコード" class="qrcode-img">
+        </div>
+      </a>
+    </div>
+
+    <!-- 4枚目：神戸市青少年科学館 -->
+    <div class="gallery-item">
+      <a href="https://awb.co.jp/kobe-kagakukan/" target="_blank" rel="noopener noreferrer">
+        <img src="awb360pics/kobe-kagakukan-pic.jpg" alt="神戸市青少年科学館">
+        <div class="caption-container">
+          <div class="text-caption">神戸市青少年科学館</div>
+          <img src="awb360pics/kobe-kagakukan-qrc.jpg" alt="QRコード" class="qrcode-img">
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
