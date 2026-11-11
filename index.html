@@ -67,8 +67,8 @@
         .caption-container {
             display: flex;
             justify-content: space-between;
-            align-items: center; /* 縦方向の中央揃え */
-            margin-top: 4px;
+            align-items: flex-start; /* 縦方向の上揃え */
+            margin-top: 2px;
         }
 
         /* 写真の下のテキスト（左寄せ・太字） */
@@ -77,6 +77,7 @@
             font-weight: bold;
             text-align: left;
             padding-right: 10px; /* QRコードとの間の余白 */
+            padding-top: 4px /* タイトル文字だけ下に下げる */
             flex: 1; /* 利用可能な幅いっぱいに広げる */
         }
 
